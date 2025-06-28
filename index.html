@@ -7,6 +7,7 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.ico" rel="shortcut icon">
 </head>
 <body>
     <!--顶部栏-->
@@ -523,5 +524,43 @@
             </div>
         </div>
     </div>
+    <!-- 右侧固定栏 -->
+    <div class="fix-list">
+        <a class="one">
+            <i class="iconfont">&#xe612;</i>
+            <span>手机APP</span>
+            <img src="images/download.png" id="download">
+        </a>
+        <a>
+            <i class="iconfont">&#xe655;</i>
+            <span>个人中心</span>
+        </a>
+        <a>
+            <i class="iconfont">&#xe616;</i>
+            <span>售后服务</span>
+        </a>
+        <a>
+            <i class="iconfont">&#xe622;</i>
+            <span>人工客服</span>
+        </a>
+        <a>
+            <i class="iconfont">&#xe67e;</i>
+            <span>购物车</span>
+        </a>
+    </div>
+
+    <!-- 临时脚本 -->
+    <script>
+        let first_icon = document.getElementsByClassName('one')[0];
+        let download = document.getElementById('download');
+        // 鼠标悬浮
+        first_icon.onmouseover = function(){
+            download.style.display = 'block';
+        }
+        // 鼠标离开
+        first_icon.onmouseout = function(){
+            download.style.display = 'none';
+        }
+    </script>
 </body>
 </html>

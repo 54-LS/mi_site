@@ -488,3 +488,46 @@ body{
     display: block;
     clear: both;
 }
+
+/* 右侧固定栏 */
+.fix-list{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    background-color: #fff;
+    height: 450px;
+    width: 82px;
+}
+.fix-list a{
+    height: 90px;
+    width: 82px;
+    display: block;
+    cursor: pointer;
+    color: #757575;
+    padding: 10px;
+    text-align: center;
+}
+.fix-list a span{
+    color: #757575;
+}
+.fix-list a i{
+    font-size: 35px;
+    margin: 10px;
+}
+.fix-list a:hover i{
+    color: #ff6700;
+}
+.fix-list a:hover span{
+    color: #ff6700;
+}
+.fix-list .one{
+    position: relative;
+}
+.fix-list .one img{
+    height: 82px;
+    width: 82px;
+    position: absolute;
+    top: 5px;
+    right: 87px;
+    display: none;
+}
